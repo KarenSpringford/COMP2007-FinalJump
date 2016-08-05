@@ -18,10 +18,10 @@ namespace FinalJumpCOMP2007.Controllers
         }
         //
         // GET: /Store/Browse?canopies=AeroDyne
-        public string Browse(string canopies)
+        public ActionResult Browse(string item)
         {
-            string message = HttpUtility.HtmlEncode("Store.Browse, Canopies = " + canopies);
-            return message;
+            var itemModel = new Item(item);
+            return View(itemModel);
         }
 
         //
