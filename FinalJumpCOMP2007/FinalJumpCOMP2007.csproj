@@ -312,16 +312,16 @@
     <Content Include="Views\Clothings\Details.cshtml" />
     <Content Include="Views\Clothings\Edit.cshtml" />
     <Content Include="Views\Clothings\Index.cshtml" />
-    <Content Include="Views\Canopies\Create.cshtml" />
-    <Content Include="Views\Canopies\Delete.cshtml" />
-    <Content Include="Views\Canopies\Details.cshtml" />
-    <Content Include="Views\Canopies\Edit.cshtml" />
-    <Content Include="Views\Canopies\Index.cshtml" />
     <Content Include="Views\Manufacturers\Create.cshtml" />
     <Content Include="Views\Manufacturers\Delete.cshtml" />
     <Content Include="Views\Manufacturers\Details.cshtml" />
     <Content Include="Views\Manufacturers\Edit.cshtml" />
     <Content Include="Views\Manufacturers\Index.cshtml" />
+    <Content Include="Views\Canopies\Create.cshtml" />
+    <Content Include="Views\Canopies\Delete.cshtml" />
+    <Content Include="Views\Canopies\Details.cshtml" />
+    <Content Include="Views\Canopies\Edit.cshtml" />
+    <Content Include="Views\Canopies\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
