@@ -26,11 +26,11 @@ namespace FinalJumpCOMP2007.Controllers
 
         //
         // GET: /Store/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(int id = 1)
         {
-            var item = new Item();
-            item.Manufacturer = "Manufacturer " + id;
-            return View(item);
+            var canopie = new Canopie("Manufacturer " + id);
+            
+            return View(canopie);
         }
     }
 }

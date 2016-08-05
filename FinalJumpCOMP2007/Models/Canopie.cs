@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -10,12 +11,24 @@ namespace FinalJumpCOMP2007.Models
         //empty constructor
         public Canopie() { }
 
-        //this constructor takes one paramet NAME
+        //this constructor takes one parameter NAME
         public Canopie(string Name)
         {
             this.Name = Name;
         }
         public string Name { get; set; }
+
+        public virtual int ID { get; set; }
+
+        [DataType(DataType.Currency)]
+        public virtual decimal ItemPrice { get; set; }
+
+        [Display(Name = "Short Description")]
+        public virtual string ShortDesc { get; set; }
+
+        [Display(Name = "Thumbnail")]
+        public virtual string ThumbnailURL { get; set; }
+
 
     }
 }
