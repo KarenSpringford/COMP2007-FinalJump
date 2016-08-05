@@ -12,25 +12,35 @@ namespace FinalJumpCOMP2007.Controllers
     {
         //
         // GET: /Store/
-        public string Index()
+        public ActionResult Index()
         {
-            return "THIS IS INSANE from Store.Index()";
+            var canopy = new List<Canopy>
+            {
+                new Canopy (" Main" ),
+                new Canopy (" Reserve" ),
+                new Canopy (" Used" ),
+                new Canopy (" Rectangle"),
+                new Canopy (" Circle" )
+            };
+
+            return View(canopy);
+            
         }
         //
         // GET: /Store/Browse?canopies=AeroDyne
-        public ActionResult Browse(string item)
+        public ActionResult Browse(string canopy)
         {
-            var itemModel = new Item(item);
-            return View(itemModel);
+            var canopyModel = new Canopy(canopy);
+            return View(canopyModel);
         }
 
         //
         // GET: /Store/Details/5
         public ActionResult Details(int id = 1)
         {
-            var canopie = new Canopie("Manufacturer " + id);
+            var canopy = new Canopy("Manufacturer " + id);
             
-            return View(canopie);
+            return View(canopy);
         }
     }
 }
