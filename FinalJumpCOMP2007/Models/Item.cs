@@ -12,20 +12,11 @@ namespace FinalJumpCOMP2007.Models
         public Item() { }
 
         //constructor returns 1 parameter Manufacturer
-        public Item(string Manufacturer)
+        public Item(string ItemName)
         {
-            this.Manufacturer = Manufacturer;
+            this.ItemName = ItemName;
         }
-        public virtual string Manufacturer { get; set; }
-        public virtual string Name { get; set; }
-        //public virtual Canopy Canopy { get; set; }
-        //public virtual int ID { get; set; }
-        //[DataType(DataType.Currency)]
-        //public virtual decimal ItemPrice { get; set; }
-        //[Display(Name = "Short Description")]
-        //public virtual string ShortDesc { get; set; }
-        //[Display(Name = "Thumbnail")]
-        //public virtual string ThumbnailURL { get; set; }
-
+        public virtual string ItemName { get; set; }
+     
     }
 }
