@@ -12,11 +12,12 @@ namespace FinalJumpCOMP2007.Models
         public Item() { }
 
         //constructor returns 1 parameter Manufacturer
-        public Item(string ItemName)
+        public Item(string Manufacturer)
         {
-            this.ItemName = ItemName;
+            this.Manufacturer = Manufacturer;
         }
-        public virtual string ItemName { get; set; }
-     
+        public virtual string Manufacturer { get; set; }
+        public virtual string Name { get; set; }
+
     }
 }
