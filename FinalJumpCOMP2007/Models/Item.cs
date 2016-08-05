@@ -17,7 +17,7 @@ namespace FinalJumpCOMP2007.Models
         }
         public string Manufacturer { get; set; }
         public string Name { get; set; }
-        public Canopie Canopie { get; set; }
+        public Canopy Canopie { get; set; }
 
     }
 }

@@ -6,13 +6,13 @@ using System.Web;
 
 namespace FinalJumpCOMP2007.Models
 {
-    public class Canopie
+    public class Canopy
     {
         //empty constructor
-        public Canopie() { }
+        public Canopy() { }
 
         //this constructor takes one parameter NAME
-        public Canopie(string Name)
+        public Canopy(string Name)
         {
             this.Name = Name;
         }

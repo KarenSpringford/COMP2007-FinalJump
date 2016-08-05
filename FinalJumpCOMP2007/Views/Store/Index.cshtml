@@ -1,0 +1,19 @@
+﻿@using FinalJumpCOMP2007.Models
+@model IEnumerable<Canopy>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Browse Canopys</h2>
+<p>
+    Select from @Model.Count()
+    canopy:
+</p>
+<ul>
+    @foreach(var canopy in Model)
+    {
+        <li>@canopy.Name</li>
+    }
+</ul>
+
