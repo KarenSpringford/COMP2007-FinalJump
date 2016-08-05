@@ -29,6 +29,8 @@ namespace FinalJumpCOMP2007.Models
         [Display(Name = "Thumbnail")]
         public virtual string ThumbnailURL { get; set; }
 
+        public virtual int ItemID { get; set; }
+
 
     }
 }
