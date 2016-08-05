@@ -10,10 +10,20 @@
     Select from @Model.Count()
     canopy:
 </p>
-<ul>
-    @foreach(var canopy in Model)
-    {
-        <li>@canopy.Name</li>
-    }
-</ul>
+<div class="clearfix"></div>
+<div id="grid-container" class="pull-right">
+    <ul>
+        @foreach (var canopy in Model)
+        {
+            <li class="cbp-item frame architecture">@canopy.Name</li>   
+                <img src="@Html.DisplayFor(modelItem => canopy.ThumbnailURL)" />
+            <h3>
+                @Html.DisplayFor(modelItem => canopy.ItemPrice)
+            </h3>
+            <h3>
+                @Html.DisplayFor(modelItem => canopy.ShortDesc)
+            </h3>
 
+        }
+    </ul>
+</div>
