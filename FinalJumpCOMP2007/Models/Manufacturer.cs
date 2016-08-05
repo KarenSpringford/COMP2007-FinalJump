@@ -6,18 +6,19 @@ using System.Web;
 
 namespace FinalJumpCOMP2007.Models
 {
-    public class Item
+    public class Manufacturer
     {
         //empty constructor
-        public Item() { }
+        public Manufacturer() { }
 
         //constructor returns 1 parameter Manufacturer
-        public Item(string Manufacturer)
+        public Manufacturer(string Manufacturer)
         {
             this.Manufacturer = Manufacturer;
         }
         public virtual string Manufacturer { get; set; }
         public virtual string Name { get; set; }
+        public int manufacturerID { get; set; }
 
     }
 }

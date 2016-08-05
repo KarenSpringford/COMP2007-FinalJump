@@ -6,17 +6,10 @@ using System.Web;
 
 namespace FinalJumpCOMP2007.Models
 {
-    public class Canopy
+    public class Clothing
     {
-        //empty constructor
-        public Canopy() { }
-
-        //this constructor takes one parameter NAME
-        public Canopy(string Name)
-        {
-            this.Name = Name;
-        }
-        public string Name { get; set; }
+        public int clothingID { get; set; }
+        public virtual string Name { get; set; }
 
         [DataType(DataType.Currency)]
         public virtual decimal ItemPrice { get; set; }
@@ -26,9 +19,5 @@ namespace FinalJumpCOMP2007.Models
 
         [Display(Name = "Thumbnail")]
         public virtual string ThumbnailURL { get; set; }
-
-        public virtual int CanopyID { get; set; }
-
-
     }
 }
