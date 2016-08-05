@@ -15,8 +15,8 @@
     <ul>
         @foreach (var canopy in Model)
         {
-            <li class="cbp-item frame architecture">@canopy.Name</li>   
-                <img src="@Html.DisplayFor(modelItem => canopy.ThumbnailURL)" />
+            <li class="cbp-item frame architecture">@Html.ActionLink(canopy.Name, "Browse", new { canopy = @canopy.Name })</li>  
+            <img src="@Html.DisplayFor(modelItem => canopy.ThumbnailURL)" />
             <h3>
                 @Html.DisplayFor(modelItem => canopy.ItemPrice)
             </h3>
