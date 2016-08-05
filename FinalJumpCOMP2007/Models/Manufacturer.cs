@@ -14,9 +14,9 @@ namespace FinalJumpCOMP2007.Models
         //constructor returns 1 parameter Manufacturer
         public Manufacturer(string Manufacturer)
         {
-            this.Manufacturer = Manufacturer;
+            this.ManufacturerName = Manufacturer;
         }
-        public virtual string Manufacturer { get; set; }
+        public virtual string ManufacturerName { get; set; }
         public virtual string Name { get; set; }
         public int manufacturerID { get; set; }
 
