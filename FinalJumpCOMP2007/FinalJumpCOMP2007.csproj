@@ -200,8 +200,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CanopiesController.cs" />
+    <Compile Include="Controllers\ClothingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ManufacturersController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -212,6 +215,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Manufacturer.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MVCFinalJumpContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -303,6 +307,21 @@
     <Content Include="Views\Store\Details.cshtml" />
     <Content Include="Views\Store\Browse.cshtml" />
     <Content Include="Views\Store\Index.cshtml" />
+    <Content Include="Views\Clothings\Create.cshtml" />
+    <Content Include="Views\Clothings\Delete.cshtml" />
+    <Content Include="Views\Clothings\Details.cshtml" />
+    <Content Include="Views\Clothings\Edit.cshtml" />
+    <Content Include="Views\Clothings\Index.cshtml" />
+    <Content Include="Views\Canopies\Create.cshtml" />
+    <Content Include="Views\Canopies\Delete.cshtml" />
+    <Content Include="Views\Canopies\Details.cshtml" />
+    <Content Include="Views\Canopies\Edit.cshtml" />
+    <Content Include="Views\Canopies\Index.cshtml" />
+    <Content Include="Views\Manufacturers\Create.cshtml" />
+    <Content Include="Views\Manufacturers\Delete.cshtml" />
+    <Content Include="Views\Manufacturers\Details.cshtml" />
+    <Content Include="Views\Manufacturers\Edit.cshtml" />
+    <Content Include="Views\Manufacturers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
