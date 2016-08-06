@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace FinalJumpCOMP2007.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         //
