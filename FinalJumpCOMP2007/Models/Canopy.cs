@@ -14,7 +14,7 @@ namespace FinalJumpCOMP2007.Models
         //this constructor takes one parameter NAME
         public Canopy(string Name)
         {
-            this.Name = Name;
+            this.CanopyName = Name;
         }
         public string CanopyName { get; set; }
         public virtual int CanopyID { get; set; }

@@ -6,9 +6,9 @@ using System.Web;
 
 namespace FinalJumpCOMP2007.Models
 {
-    public class Inventory : DropCreateDatabaseIfModelChanges<MenuEntities>
+    public class Inventory : DropCreateDatabaseIfModelChanges<FinalJumpContext>
     {
-        protected override void Seed (Canopy context)
+        protected override void Seed (FinalJumpContext context)
         {
             var canopy = new List<Canopy>
             {
