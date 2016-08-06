@@ -17,7 +17,7 @@ namespace FinalJumpCOMP2007.Models
             this.ManufacturerName = Manufacturer;
         }
         public virtual string ManufacturerName { get; set; }
-        public virtual string Name { get; set; }
+        
         public int manufacturerID { get; set; }
 
     }
