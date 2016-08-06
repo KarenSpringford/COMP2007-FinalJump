@@ -8,24 +8,23 @@ using FinalJumpCOMP2007.Models;
 
 namespace FinalJumpCOMP2007.Controllers
 {
+
     public class StoreController : Controller
     {
+
+        FinalJumpContext storeDB = new FinalJumpContext();
+
         //
         // GET: /Store/
         public ActionResult Index()
         {
-            var canopy = new List<Canopy>
-            {
-                new Canopy (" Main" ),
-                new Canopy (" Reserve" ),
-                new Canopy (" Used" ),
-                new Canopy (" Rectangle"),
-                new Canopy (" Circle" )
-            };
+  
+                List < Canopy > canopy = storeDB.Canopys.ToList();
 
-            return View(canopy);
-            
+            return View(canopy);          
         }
+
+
         //
         // GET: /Store/Browse?canopies=AeroDyne
         public ActionResult Browse(string canopy)
