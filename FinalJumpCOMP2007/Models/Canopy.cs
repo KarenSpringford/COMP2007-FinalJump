@@ -17,6 +17,7 @@ namespace FinalJumpCOMP2007.Models
             this.Name = Name;
         }
         public string Name { get; set; }
+        public virtual int CanopyID { get; set; }
 
         [DataType(DataType.Currency)]
         public virtual decimal ItemPrice { get; set; }
@@ -27,7 +28,7 @@ namespace FinalJumpCOMP2007.Models
         [Display(Name = "Thumbnail")]
         public virtual string ThumbnailURL { get; set; }
 
-        public virtual int CanopyID { get; set; }
+ 
 
 
     }
