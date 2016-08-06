@@ -11,6 +11,8 @@ namespace FinalJumpCOMP2007.Models
             : base("name=FinalJumpConnection")
         {
         }
-
+        public virtual DbSet<Canopy> Canopys { get; set; }
+        public virtual DbSet<Clothing> Clothing { get; set; }
+        public virtual DbSet<Manufacturer>Manufacturers  { get; set; }
     }
 }

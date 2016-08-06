@@ -16,7 +16,7 @@ namespace FinalJumpCOMP2007.Models
         {
             this.Name = Name;
         }
-        public string Name { get; set; }
+        public string CanopyName { get; set; }
         public virtual int CanopyID { get; set; }
 
         [DataType(DataType.Currency)]
