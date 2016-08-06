@@ -9,7 +9,7 @@ namespace FinalJumpCOMP2007.Models
     public class Clothing
     {
         public int clothingID { get; set; }
-        public virtual string Name { get; set; }
+        public virtual string ClothingName { get; set; }
 
         [DataType(DataType.Currency)]
         public virtual decimal ItemPrice { get; set; }
